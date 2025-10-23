@@ -16,6 +16,13 @@
     <priority>0.9</priority>
   </url>
 
+ <url>
+    <loc>https://flumbericoco.com/faq</loc>
+    <lastmod>2025-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <url>
     <loc>https://flumbericoco.com/pricing</loc>
     <lastmod>2025-10-22</lastmod>
