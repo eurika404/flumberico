@@ -1,23 +1,22 @@
 export default function SocialProof() {
   const testimonials = [
-<<<<<<< HEAD
     {
       name: "Sarah T.",
       title: "Marketing Analyst",
       quote: "Flumberico got me 8 interviews in 3 weeks.",
-      image: "/Sarah.jpg"
+      image: "/Sarah.jpg",
     },
     {
       name: "Marcus L.",
       title: "Product Manager",
       quote: "Landed a $140K job in 19 days.",
-      image: "/Marcus.jpg"
+      image: "/Marcus.jpg",
     },
     {
       name: "Priya K.",
       title: "Software Engineer",
       quote: "Flumberico saved me from burnout.",
-      image: "/Priya.jpg"
+      image: "/Priya.jpg",
     },
   ]
 
@@ -26,18 +25,6 @@ export default function SocialProof() {
     { label: "on waitlist", value: "3,847+" },
     { label: "ATS match accuracy", value: "94%" },
     { label: "monthly applications", value: "200+" },
-=======
-    { name: "Sarah T.", quote: "Flumberico got me 8 interviews in 3 weeks." },
-    { name: "Marcus L.", quote: "Landed a $140K job in 19 days." },
-    { name: "Priya K.", quote: "Flumberico saved me from burnout." },
-  ]
-
-  const stats = [
-    { label: "83% success", value: "83%" },
-    { label: "3,847 on waitlist", value: "3,847" },
-    { label: "94% ATS match", value: "94%" },
-    { label: "200+ monthly apps", value: "200+" },
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
   ]
 
   return (
@@ -47,23 +34,8 @@ export default function SocialProof() {
           Real Results from <span className="text-cyan">Real Flumberico Users</span>
         </h2>
 
-<<<<<<< HEAD
         {/* Stats Bar */}
         <div className="grid md:grid-cols-4 gap-4 bg-midnight p-8 rounded-xl border border-border mb-12">
-=======
-        {/* Testimonials */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {testimonials.map((testimonial, idx) => (
-            <div key={idx} className="p-6 bg-midnight rounded-xl border border-border">
-              <p className="text-lg mb-4 italic">"{testimonial.quote}"</p>
-              <p className="font-semibold text-cyan">— {testimonial.name}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Stats Bar */}
-        <div className="grid md:grid-cols-4 gap-4 bg-midnight p-8 rounded-xl border border-border">
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
           {stats.map((stat, idx) => (
             <div key={idx} className="text-center">
               <p className="text-3xl font-bold text-cyan mb-2">{stat.value}</p>
@@ -71,7 +43,6 @@ export default function SocialProof() {
             </div>
           ))}
         </div>
-<<<<<<< HEAD
 
         {/* Testimonials */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -82,7 +53,7 @@ export default function SocialProof() {
             >
               <div className="flex items-center mb-4">
                 <img
-                  src={testimonial.image}
+                  src={testimonial.image || "/placeholder.svg"}
                   alt={`${testimonial.name}, ${testimonial.title}`}
                   className="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-cyan/20"
                 />
@@ -116,8 +87,6 @@ export default function SocialProof() {
             </p>
           </div>
         </div>
-=======
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
       </div>
     </section>
   )

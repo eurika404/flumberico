@@ -65,7 +65,7 @@ This document outlines how to **redesign and rewrite** the page to make it easie
 **Goal:** Instant clarity — “What’s in it for me?”
 
 **New Structure Example:**
-```text
+\`\`\`text
 Headline:  
 Flumberico applies to 200+ dream jobs — while you sleep.
 

@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-<<<<<<< HEAD
-import { Loader2, ArrowLeft, Upload, User } from "lucide-react"
+import { Loader2, ArrowLeft } from "lucide-react"
 
 // Custom scrollbar styles
 const customScrollbarStyle = `
@@ -34,46 +33,28 @@ export default function OnboardingPage() {
   const totalSteps = 4
 
   useEffect(() => {
-    const style = document.createElement('style')
+    const style = document.createElement("style")
     style.textContent = customScrollbarStyle
     document.head.appendChild(style)
     return () => {
       document.head.removeChild(style)
     }
   }, [])
-=======
-import { Loader2, ArrowLeft } from "lucide-react"
-
-export default function OnboardingPage() {
-  const [step, setStep] = useState(1)
-  const [selectedOption, setSelectedOption] = useState<string | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
-  const totalSteps = 6
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 
   const handleClose = () => {
-    window.location.href = "https://www.flumbericoco.com/"
+    window.location.href = "https://www.flumberico.com/"
   }
 
   const handleNext = () => {
-<<<<<<< HEAD
     if (step === 1 && (!name || !email)) return
     if (step === 2 && !experience.trim()) return
 
     if (step === 3) {
-=======
-    if (step === 2 && !selectedOption) return
-    if (step === 4) {
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
       setIsLoading(true)
       setTimeout(() => {
         setIsLoading(false)
         setStep(step + 1)
-<<<<<<< HEAD
       }, 2000)
-=======
-      }, 3000)
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
     } else {
       setStep(step + 1)
     }
@@ -84,12 +65,10 @@ export default function OnboardingPage() {
     else handleClose()
   }
 
-<<<<<<< HEAD
   // Generate AI-matched jobs based on user experience
   const generateAiJobs = (userExperience: string) => {
     const exp = userExperience.toLowerCase()
 
-    // Product Management roles
     if (exp.includes("product") || exp.includes("pm") || exp.includes("manager")) {
       return [
         { title: "Senior Product Manager", match: 95, salary: "$140K-190K" },
@@ -101,7 +80,6 @@ export default function OnboardingPage() {
       ]
     }
 
-    // UX/Design roles
     if (exp.includes("ux") || exp.includes("design") || exp.includes("ui") || exp.includes("designer")) {
       return [
         { title: "Senior UX Designer", match: 94, salary: "$120K-160K" },
@@ -113,7 +91,6 @@ export default function OnboardingPage() {
       ]
     }
 
-    // Data/Analytics roles
     if (exp.includes("data") || exp.includes("analytics") || exp.includes("analysis") || exp.includes("scientist")) {
       return [
         { title: "Senior Data Scientist", match: 96, salary: "$140K-190K" },
@@ -125,8 +102,13 @@ export default function OnboardingPage() {
       ]
     }
 
-    // Marketing roles
-    if (exp.includes("marketing") || exp.includes("growth") || exp.includes("content") || exp.includes("seo") || exp.includes("social")) {
+    if (
+      exp.includes("marketing") ||
+      exp.includes("growth") ||
+      exp.includes("content") ||
+      exp.includes("seo") ||
+      exp.includes("social")
+    ) {
       return [
         { title: "Growth Marketing Manager", match: 92, salary: "$95K-135K" },
         { title: "Performance Marketing Manager", match: 90, salary: "$100K-140K" },
@@ -137,8 +119,13 @@ export default function OnboardingPage() {
       ]
     }
 
-    // Engineering roles
-    if (exp.includes("engineer") || exp.includes("developer") || exp.includes("software") || exp.includes("frontend") || exp.includes("backend")) {
+    if (
+      exp.includes("engineer") ||
+      exp.includes("developer") ||
+      exp.includes("software") ||
+      exp.includes("frontend") ||
+      exp.includes("backend")
+    ) {
       return [
         { title: "Senior Software Engineer", match: 94, salary: "$150K-200K" },
         { title: "Staff Software Engineer", match: 92, salary: "$170K-220K" },
@@ -150,8 +137,12 @@ export default function OnboardingPage() {
       ]
     }
 
-    // Sales roles
-    if (exp.includes("sales") || exp.includes("account") || exp.includes("business development") || exp.includes("revenue")) {
+    if (
+      exp.includes("sales") ||
+      exp.includes("account") ||
+      exp.includes("business development") ||
+      exp.includes("revenue")
+    ) {
       return [
         { title: "Account Executive", match: 91, salary: "$80K-120K" },
         { title: "Sales Manager", match: 89, salary: "$95K-140K" },
@@ -161,106 +152,6 @@ export default function OnboardingPage() {
       ]
     }
 
-    // HR/Recruiting roles
-    if (exp.includes("hr") || exp.includes("recruiting") || exp.includes("talent") || exp.includes("human resources")) {
-      return [
-        { title: "Senior Technical Recruiter", match: 90, salary: "$85K-125K" },
-        { title: "HR Business Partner", match: 88, salary: "$90K-130K" },
-        { title: "Talent Acquisition Manager", match: 86, salary: "$95K-135K" },
-        { title: "People Operations Manager", match: 84, salary: "$80K-120K" },
-        { title: "Recruiting Coordinator", match: 82, salary: "$55K-85K" },
-      ]
-    }
-
-    // Finance roles
-    if (exp.includes("finance") || exp.includes("accounting") || exp.includes("financial") || exp.includes("controller")) {
-      return [
-        { title: "Financial Analyst", match: 91, salary: "$85K-125K" },
-        { title: "Senior Accountant", match: 89, salary: "$75K-115K" },
-        { title: "Finance Manager", match: 87, salary: "$105K-145K" },
-        { title: "Controller", match: 85, salary: "$120K-160K" },
-        { title: "Accounts Receivable Specialist", match: 82, salary: "$60K-90K" },
-      ]
-    }
-
-    // Customer Service roles
-    if (exp.includes("customer") || exp.includes("support") || exp.includes("service") || exp.includes("success")) {
-      return [
-        { title: "Customer Success Manager", match: 88, salary: "$75K-115K" },
-        { title: "Customer Support Lead", match: 86, salary: "$65K-95K" },
-        { title: "Technical Support Specialist", match: 84, salary: "$60K-90K" },
-        { title: "Customer Experience Manager", match: 82, salary: "$80K-120K" },
-        { title: "Support Representative", match: 80, salary: "$45K-75K" },
-      ]
-    }
-
-    // Operations roles
-    if (exp.includes("operations") || exp.includes("operational") || exp.includes("logistics") || exp.includes("supply chain")) {
-      return [
-        { title: "Operations Manager", match: 90, salary: "$90K-130K" },
-        { title: "Supply Chain Analyst", match: 87, salary: "$75K-115K" },
-        { title: "Logistics Coordinator", match: 85, salary: "$60K-90K" },
-        { title: "Process Improvement Specialist", match: 83, salary: "$80K-120K" },
-        { title: "Operations Analyst", match: 81, salary: "$70K-110K" },
-      ]
-    }
-
-    // Consulting roles
-    if (exp.includes("consultant") || exp.includes("consulting") || exp.includes("advisory")) {
-      return [
-        { title: "Management Consultant", match: 92, salary: "$120K-170K" },
-        { title: "Strategy Consultant", match: 89, salary: "$130K-180K" },
-        { title: "IT Consultant", match: 87, salary: "$100K-150K" },
-        { title: "Business Analyst Consultant", match: 85, salary: "$85K-125K" },
-        { title: "Process Consultant", match: 82, salary: "$90K-140K" },
-      ]
-    }
-
-    // Healthcare roles
-    if (exp.includes("healthcare") || exp.includes("medical") || exp.includes("health") || exp.includes("nurse") || exp.includes("doctor")) {
-      return [
-        { title: "Healthcare Administrator", match: 88, salary: "$85K-125K" },
-        { title: "Medical Office Manager", match: 86, salary: "$65K-95K" },
-        { title: "Health Information Manager", match: 84, salary: "$75K-115K" },
-        { title: "Clinical Research Coordinator", match: 82, salary: "$70K-110K" },
-        { title: "Healthcare Consultant", match: 80, salary: "$90K-140K" },
-      ]
-    }
-
-    // Education roles
-    if (exp.includes("education") || exp.includes("teacher") || exp.includes("training") || exp.includes("learning") || exp.includes("instructional")) {
-      return [
-        { title: "Instructional Designer", match: 89, salary: "$75K-115K" },
-        { title: "Training Manager", match: 87, salary: "$85K-125K" },
-        { title: "Curriculum Developer", match: 85, salary: "$70K-110K" },
-        { title: "Learning & Development Specialist", match: 83, salary: "$80K-120K" },
-        { title: "Education Coordinator", match: 81, salary: "$60K-90K" },
-      ]
-    }
-
-    // Legal roles
-    if (exp.includes("legal") || exp.includes("lawyer") || exp.includes("attorney") || exp.includes("paralegal")) {
-      return [
-        { title: "Corporate Attorney", match: 91, salary: "$150K-250K" },
-        { title: "Legal Counsel", match: 89, salary: "$130K-200K" },
-        { title: "Senior Paralegal", match: 86, salary: "$75K-115K" },
-        { title: "Legal Operations Manager", match: 84, salary: "$95K-145K" },
-        { title: "Compliance Officer", match: 82, salary: "$85K-125K" },
-      ]
-    }
-
-    // Real Estate roles
-    if (exp.includes("real estate") || exp.includes("property") || exp.includes("realtor") || exp.includes("leasing")) {
-      return [
-        { title: "Real Estate Broker", match: 88, salary: "$80K-150K" },
-        { title: "Property Manager", match: 86, salary: "$65K-95K" },
-        { title: "Real Estate Analyst", match: 84, salary: "$75K-115K" },
-        { title: "Leasing Consultant", match: 82, salary: "$50K-80K" },
-        { title: "Property Development Coordinator", match: 80, salary: "$70K-110K" },
-      ]
-    }
-
-    // Default fallback roles
     return [
       { title: "Operations Manager", match: 85, salary: "$90K-130K" },
       { title: "Business Analyst", match: 83, salary: "$85K-125K" },
@@ -272,20 +163,7 @@ export default function OnboardingPage() {
   }
 
   const aiJobs = generateAiJobs(experience)
-=======
-  // Random job list
-  const randomJobs = [
-    { title: "AI Product Manager", match: 94 },
-    { title: "Data Analyst", match: 89 },
-    { title: "UX Researcher", match: 92 },
-    { title: "Software Engineer", match: 96 },
-    { title: "AI Prompt Engineer", match: 91 },
-  ]
 
-  const jobs = randomJobs.sort(() => 0.5 - Math.random()).slice(0, 3)
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
-
-  // Animasi varian
   const fadeSlide = {
     initial: { opacity: 0, y: 40 },
     animate: { opacity: 1, y: 0 },
@@ -295,7 +173,6 @@ export default function OnboardingPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a1428] to-[#0e1a34] text-white flex flex-col items-center justify-center p-6 relative overflow-hidden">
-
       {/* Progress Bar */}
       <motion.div
         className="absolute top-0 left-0 h-1 bg-cyan"
@@ -314,29 +191,18 @@ export default function OnboardingPage() {
 
       {/* Step Container */}
       <AnimatePresence mode="wait">
-<<<<<<< HEAD
         {/* STEP 1: Name + Email */}
         {step === 1 && (
           <motion.div key="s1" {...fadeSlide} className="max-w-md w-full">
             <motion.h1
               className="text-4xl font-bold mb-2 text-center"
-=======
-        {/* STEP 1 */}
-        {step === 1 && (
-          <motion.div key="s1" {...fadeSlide} className="max-w-xl text-center">
-            <motion.h1
-              className="text-5xl font-extrabold mb-6"
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8 }}
             >
-<<<<<<< HEAD
               Join <span className="text-cyan">Flumberico</span>
             </motion.h1>
-            <p className="text-muted-foreground mb-8 text-center">
-              Let AI hunt your dream job while you sleep
-            </p>
+            <p className="text-muted-foreground mb-8 text-center">Let AI hunt your dream job while you sleep</p>
 
             <div className="space-y-4">
               <div>
@@ -429,83 +295,11 @@ export default function OnboardingPage() {
                 }`}
               >
                 Get My AI Matches
-=======
-              Welcome to <span className="text-cyan">Flumbericoco</span>
-            </motion.h1>
-            <p className="text-muted-foreground mb-10 text-lg">
-              Let’s discover your perfect career path with AI-powered insights.
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={handleNext}
-              className="px-8 py-4 bg-cyan text-midnight font-semibold rounded-full text-lg shadow-md hover:shadow-cyan/30 transition-all"
-            >
-              Get Started
-            </motion.button>
-          </motion.div>
-        )}
-
-        {/* STEP 2 */}
-        {step === 2 && (
-          <motion.div key="s2" {...fadeSlide} className="max-w-xl text-center">
-            <h2 className="text-3xl font-bold mb-8">What matters most to you?</h2>
-            <div className="grid grid-cols-2 gap-4 mb-10">
-              {["High Salary", "Career Growth", "Work-Life Balance", "Remote Flexibility"].map((opt) => (
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.97 }}
-                  key={opt}
-                  onClick={() => setSelectedOption(opt)}
-                  className={`p-5 border rounded-2xl transition-all ${
-                    selectedOption === opt
-                      ? "bg-cyan text-midnight font-semibold shadow-lg"
-                      : "bg-[#0e1a34] hover:bg-midnight-light border-gray-700"
-                  }`}
-                >
-                  {opt}
-                </motion.button>
-              ))}
-            </div>
-            <button
-              onClick={handleNext}
-              disabled={!selectedOption}
-              className={`px-8 py-3 rounded-full font-semibold transition-all ${
-                selectedOption
-                  ? "bg-cyan text-midnight hover:bg-cyan-dark"
-                  : "bg-gray-600 text-gray-400 cursor-not-allowed"
-              }`}
-            >
-              Next
-            </button>
-          </motion.div>
-        )}
-
-        {/* STEP 3 */}
-        {step === 3 && (
-          <motion.div key="s3" {...fadeSlide} className="max-w-xl text-center">
-            <h2 className="text-3xl font-bold mb-8">Do you already have a resume?</h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                onClick={handleNext}
-                className="px-8 py-3 bg-cyan text-midnight rounded-full font-semibold hover:bg-cyan-dark transition-all"
-              >
-                Yes, upload it
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                onClick={handleNext}
-                className="px-8 py-3 border border-gray-600 rounded-full hover:bg-midnight-light transition-all"
-              >
-                No, help me build one
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
               </motion.button>
             </div>
           </motion.div>
         )}
 
-<<<<<<< HEAD
         {/* STEP 3: AI Analysis -> Auto-show Results */}
         {step === 3 && (
           <motion.div key="s3" {...fadeSlide} className="text-center max-w-2xl">
@@ -598,97 +392,6 @@ export default function OnboardingPage() {
 
       {/* Back Button */}
       {step > 1 && step < 5 && (
-=======
-        {/* STEP 4 - Loading / Scanning */}
-        {step === 4 && (
-          <motion.div key="s4" {...fadeSlide} className="text-center max-w-xl">
-            <h2 className="text-3xl font-bold mb-6">🔍 Analyzing Your Profile...</h2>
-            <p className="text-muted-foreground mb-8">AI is scanning your skills and job preferences.</p>
-
-            {isLoading ? (
-              <motion.div
-                className="relative flex justify-center items-center"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-              >
-                <div className="absolute w-28 h-28 rounded-full border-4 border-cyan/40 animate-ping" />
-                <Loader2 className="animate-spin text-cyan w-10 h-10 relative z-10" />
-              </motion.div>
-            ) : (
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                onClick={handleNext}
-                className="mt-10 px-8 py-3 bg-cyan text-midnight font-semibold rounded-full hover:bg-cyan-dark transition-all"
-              >
-                View My AI Dashboard
-              </motion.button>
-            )}
-          </motion.div>
-        )}
-
-        {/* STEP 5 - Dashboard */}
-        {step === 5 && (
-          <motion.div key="s5" {...fadeSlide} className="text-center max-w-2xl">
-            <h2 className="text-3xl font-bold mb-6">🎯 Your Personalized Dashboard</h2>
-            <p className="text-muted-foreground mb-8">
-              Based on your goals, here’s what fits you best:
-            </p>
-            <div className="grid gap-4">
-              {jobs.map((job, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ scale: 1.02 }}
-                  className="border border-gray-700 bg-[#111a36] p-5 rounded-xl flex justify-between items-center"
-                >
-                  <span>{job.title}</span>
-                  <span className="text-cyan font-semibold">{job.match}% Match</span>
-                </motion.div>
-              ))}
-            </div>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              onClick={handleNext}
-              className="mt-10 px-8 py-3 bg-cyan text-midnight font-semibold rounded-full hover:bg-cyan-dark transition-all"
-            >
-              Continue
-            </motion.button>
-          </motion.div>
-        )}
-
-        {/* STEP 6 - Final Funnel CTA */}
-        {step === 6 && (
-          <motion.div key="s6" {...fadeSlide} className="text-center max-w-xl">
-            <h2 className="text-4xl font-bold mb-6">🚀 You’re Almost There!</h2>
-            <p className="text-muted-foreground mb-10 text-lg">
-              Join the official early access campaign and secure your spot in the next-gen career platform.
-            </p>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              href="https://upvir.al/166486/Flumberico"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <button className="px-10 py-4 bg-[#bcff00] text-[#0a1428] font-extrabold rounded-full text-lg hover:opacity-90 transition-all shadow-[0_0_20px_rgba(188,255,0,0.3)]">
-                Join the Early Access Campaign
-              </button>
-            </motion.a>
-            <p className="mt-6 text-sm text-muted-foreground">
-              or{" "}
-              <button
-                onClick={handleClose}
-                className="underline hover:text-cyan transition-all"
-              >
-                return to homepage
-              </button>
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Back Button */}
-      {step > 1 && step < 6 && (
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
         <motion.button
           whileHover={{ scale: 1.05 }}
           onClick={handleBack}
