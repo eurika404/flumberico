@@ -1,8 +1,14 @@
+<<<<<<< HEAD
+=======
+"use client"
+
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Check, X } from "lucide-react"
 import Link from "next/link"
 
+<<<<<<< HEAD
 export const metadata = {
   title: "Flumberico Pricing - AI Job Search Automation | Waitlist Access",
   description: "Join Flumberico's waitlist for AI job search automation. Apply to 200+ jobs while you sleep with 30-day interview guarantee. Limited to 10,000 spots - 78% filled.",
@@ -63,6 +69,57 @@ export default function Pricing() {
         { text: "Custom integrations", included: true },
         { text: "SLA guarantees", included: true },
         { text: "Team performance analytics", included: true },
+=======
+export default function Pricing() {
+  const plans = [
+    {
+      name: "Starter",
+      price: "$0",
+      period: "/month",
+      description: "Perfect for beginners — get full access for free by sharing Flumberico.",
+      features: [
+        { text: "50 applications per month", included: true },
+        { text: "Resume optimization", included: true },
+        { text: "Basic AI job matching", included: true },
+        { text: "Email support", included: true },
+        { text: "Interview prep", included: false },
+        { text: "Priority support", included: false },
+        { text: "30-day guarantee", included: false },
+      ],
+      cta: "Join Free (Share Required)",
+      highlighted: true,
+    },
+    {
+      name: "Professional",
+      price: "$199",
+      period: "/month",
+      description: "Best choice for professionals who want faster, smarter results.",
+      features: [
+        { text: "200 applications per month", included: true },
+        { text: "Advanced resume optimization", included: true },
+        { text: "AI-powered job matching", included: true },
+        { text: "Priority email support", included: true },
+        { text: "Interview prep & coaching", included: true },
+        { text: "Priority recruiter visibility", included: true },
+        { text: "30-day success guarantee", included: true },
+      ],
+      cta: "Upgrade Plan",
+      highlighted: false,
+    },
+    {
+      name: "Enterprise",
+      price: "Custom",
+      period: "",
+      description: "Ideal for large teams and organizations looking for scalable hiring solutions.",
+      features: [
+        { text: "Unlimited job applications", included: true },
+        { text: "Resume optimization", included: true },
+        { text: "Custom AI matching model", included: true },
+        { text: "Dedicated account manager", included: true },
+        { text: "Advanced interview prep", included: true },
+        { text: "24/7 enterprise support", included: true },
+        { text: "Custom performance guarantee", included: true },
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
       ],
       cta: "Contact Sales",
       highlighted: false,
@@ -77,6 +134,7 @@ export default function Pricing() {
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto text-center animate-slide-in-up">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">
+<<<<<<< HEAD
             Limited <span className="text-cyan">Waitlist Access</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
@@ -87,6 +145,13 @@ export default function Pricing() {
             <div>⚡ Save 40 Hours/Week</div>
             <div>💰 $500 Guarantee</div>
           </div>
+=======
+            Simple & <span className="text-cyan">Transparent Pricing</span>
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+            Get started completely free — all we ask is that you share Flumberico with your network.
+          </p>
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
         </div>
       </section>
 
@@ -111,7 +176,11 @@ export default function Pricing() {
               <div className="p-8">
                 {plan.highlighted && (
                   <div className="inline-block px-3 py-1 bg-cyan/20 border border-cyan/50 rounded-full text-cyan text-sm font-semibold mb-4">
+<<<<<<< HEAD
                     78% Filled - Only 2,200 Spots Left
+=======
+                    Currently Free
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
                   </div>
                 )}
 
@@ -165,6 +234,7 @@ export default function Pricing() {
           <div className="space-y-6">
             {[
               {
+<<<<<<< HEAD
                 q: "What does the 30-day interview guarantee mean?",
                 a: "If you don't land any interviews within 30 days of using Flumberico, we'll pay you $500. Our 83% success rate shows this works.",
               },
@@ -179,6 +249,22 @@ export default function Pricing() {
               {
                 q: "Is Flumberico safe to use while employed?",
                 a: "Yes! Stealth mode ensures your current employer won't discover your job search. We prioritize your privacy and security.",
+=======
+                q: "Is Flumberico really free?",
+                a: "Yes! You can access the full platform for free by simply sharing Flumberico using your personal invite link.",
+              },
+              {
+                q: "Do I need a credit card?",
+                a: "No credit card is required to join the free Starter plan.",
+              },
+              {
+                q: "Can I cancel anytime?",
+                a: "Absolutely. You can stop using the service anytime with no hidden fees or penalties.",
+              },
+              {
+                q: "What if I want more features?",
+                a: "You can upgrade to Professional or Enterprise anytime for more power, automation, and support.",
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
               },
             ].map((item, index) => (
               <div
@@ -196,6 +282,7 @@ export default function Pricing() {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
+<<<<<<< HEAD
           <h2 className="text-4xl font-bold mb-6">Stop Job Hunting, Start Getting Interviews</h2>
           <p className="text-xl text-muted-foreground mb-8">
             Limited to 10,000 spots total. Join 3,800+ professionals who've already secured their place in the AI job search revolution.
@@ -214,6 +301,16 @@ export default function Pricing() {
           <Link href="https://upvir.al/166486/Flumberico">
             <button className="px-8 py-4 bg-cyan text-midnight font-bold rounded-full hover:bg-cyan-dark transition-smooth glow-cyan hover:glow-cyan-lg animate-glow-pulse text-lg">
               Join Waitlist Before It's Full
+=======
+          <h2 className="text-4xl font-bold mb-6">Start Your Career Growth Today — For Free</h2>
+          <p className="text-xl text-muted-foreground mb-8">
+            Join thousands of professionals using Flumberico to find better jobs faster. It's free for now — just share
+            to unlock full access.
+          </p>
+          <Link href="https://upvir.al/166486/Flumberico">
+            <button className="px-8 py-4 bg-cyan text-midnight font-bold rounded-full hover:bg-cyan-dark transition-smooth glow-cyan hover:glow-cyan-lg animate-glow-pulse text-lg">
+              Get Free Access
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
             </button>
           </Link>
         </div>

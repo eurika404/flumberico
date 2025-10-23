@@ -7,7 +7,10 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -35,8 +38,13 @@ export default function ContactPage() {
 
   const contactInfo = [
     { icon: Mail, label: "Email", value: "hello@flumberico.com" },
+<<<<<<< HEAD
     { icon: Phone, label: "Phone", value: "1 336-457-3841" },
     { icon: MapPin, label: "Location", value: "4976 Keyser Ridge Road, Greensboro, NC 27401" },
+=======
+    { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
+    { icon: MapPin, label: "Location", value: "San Francisco, CA" },
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
   ]
 
   return (
@@ -47,6 +55,7 @@ export default function ContactPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 border-b border-border">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">
+<<<<<<< HEAD
             Ready to Transform Your <span className="text-cyan">Job Search?</span>
           </h1>
           <p className="text-xl text-muted-foreground">
@@ -57,6 +66,13 @@ export default function ContactPage() {
             <div>✓ 200+ Monthly Applications</div>
             <div>✓ 94% ATS Match Accuracy</div>
           </div>
+=======
+            Get in <span className="text-cyan">Touch</span>
+          </h1>
+          <p className="text-xl text-muted-foreground">
+            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          </p>
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
         </div>
       </section>
 

@@ -9,6 +9,7 @@ export default function FAQSection() {
   const faqs = [
     {
       question: "Is Flumberico a job board?",
+<<<<<<< HEAD
       answer: "No. We apply for you using AI-powered resumes, scanning 1M+ jobs and submitting tailored applications automatically.",
     },
     {
@@ -30,6 +31,34 @@ export default function FAQSection() {
     {
       question: "Is there a credit card required?",
       answer: "No. Join the waitlist for free. No credit card required.",
+=======
+      answer:
+        "Nope. Flumberico applies for you using AI-powered resumes. We scan 1M+ jobs and automatically submit tailored applications on your behalf.",
+    },
+    {
+      question: "Can I stay hidden from my current employer?",
+      answer:
+        "Yes, via Stealth Mode. Flumberico has a built-in privacy feature that keeps your job search confidential from your current employer.",
+    },
+    {
+      question: "What if I don't get interviews?",
+      answer:
+        "Flumberico pays $500 under the 30-Day Guarantee. If you don't get at least one interview within 30 days, we refund you $500.",
+    },
+    {
+      question: "How many jobs does Flumberico apply to?",
+      answer:
+        "Flumberico applies to 200+ perfect-fit jobs per month, all with custom-tailored resumes based on your profile and preferences.",
+    },
+    {
+      question: "When does Flumberico launch?",
+      answer:
+        "Flumberico launches March 1, 2025. Early-access users who refer 3 friends get instant access before the official launch.",
+    },
+    {
+      question: "Is there a credit card required?",
+      answer: "No credit card required. Join the waitlist for free and get instant access once you refer 3 friends.",
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
     },
   ]
 

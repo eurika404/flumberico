@@ -12,7 +12,11 @@ export default function Header() {
     { label: "How It Works", href: "/how-it-works" },
     { label: "Pricing", href: "/pricing" },
     { label: "Results", href: "/results" },
+<<<<<<< HEAD
     { label: "FAQ", href: "/faq" },
+=======
+    { label: "FAQ", href: "#faq" },
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
   ]
 
   const footerLinks = [

@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from "react"
 
+<<<<<<< HEAD
 // Custom animations
 const customAnimations = `
   @keyframes shimmer {
@@ -45,6 +46,8 @@ const customAnimations = `
   }
 `
 
+=======
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 export default function ScarcitySection() {
   const filledSpots = 7847
   const totalSpots = 10000
@@ -52,6 +55,7 @@ export default function ScarcitySection() {
 
   // State untuk animasi progres
   const [animatedPercentage, setAnimatedPercentage] = useState(0)
+<<<<<<< HEAD
   const [animatedFilledSpots, setAnimatedFilledSpots] = useState(0)
   const [isComplete, setIsComplete] = useState(false)
   const [showPulse, setShowPulse] = useState(false)
@@ -75,11 +79,18 @@ export default function ScarcitySection() {
     let start = 0
     let spotsStart = 0
     const duration = 2500 // Enhanced duration 2.5 seconds
+=======
+
+  useEffect(() => {
+    let start = 0
+    const duration = 1500 // durasi animasi 1.5 detik
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
     const startTime = performance.now()
 
     const animate = (currentTime) => {
       const elapsed = currentTime - startTime
       const progress = Math.min(elapsed / duration, 1)
+<<<<<<< HEAD
 
       // Enhanced easing function - custom ease-in-out with bounce
       const easedProgress = progress < 0.5
@@ -103,11 +114,24 @@ export default function ScarcitySection() {
         // Trigger completion effects
         setIsComplete(true)
         setTimeout(() => setShowPulse(true), 100)
+=======
+      const easedProgress = 1 - Math.pow(1 - progress, 3) // ease-out cubic
+      const current = start + (targetPercentage - start) * easedProgress
+
+      setAnimatedPercentage(current)
+
+      if (progress < 1) {
+        requestAnimationFrame(animate)
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
       }
     }
 
     requestAnimationFrame(animate)
+<<<<<<< HEAD
   }, [targetPercentage, filledSpots])
+=======
+  }, [targetPercentage])
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -122,6 +146,7 @@ export default function ScarcitySection() {
             review, and fair competition.
           </p>
 
+<<<<<<< HEAD
           {/* Progress Bar with Enhanced Animation */}
           <div className="max-w-md mx-auto">
             <div className="mb-4">
@@ -187,6 +212,22 @@ export default function ScarcitySection() {
                 )}
               </div>
             </div>
+=======
+          {/* Progress Bar */}
+          <div className="max-w-md mx-auto">
+            <div className="mb-4">
+              <div className="w-full bg-midnight rounded-full h-3 border border-border overflow-hidden">
+                <div
+                  className="h-full bg-cyan glow-cyan transition-[width] duration-300 ease-out"
+                  style={{ width: `${animatedPercentage}%` }}
+                ></div>
+              </div>
+            </div>
+
+            <p className="text-muted-foreground">
+              {filledSpots.toLocaleString()} of {totalSpots.toLocaleString()} spots filled ({animatedPercentage.toFixed(0)}%)
+            </p>
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
           </div>
         </div>
       </div>

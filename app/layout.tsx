@@ -112,7 +112,10 @@ export default function RootLayout({
       </head>
       <body
         className={`${_geist.className} ${_geistMono.className} font-sans antialiased bg-midnight text-white`}
+<<<<<<< HEAD
         suppressHydrationWarning={true}
+=======
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
       >
         <AnimatedBackground />
         {children}

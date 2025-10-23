@@ -1,8 +1,14 @@
+<<<<<<< HEAD
+=======
+"use client"
+
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { TrendingUp, Users, Award, Zap } from "lucide-react"
 import Link from "next/link"
 
+<<<<<<< HEAD
 export const metadata = {
   title: "Flumberico Results - AI Job Search Success Stories | 83% Success Rate",
   description: "See real results from Flumberico's AI job search automation. 83% success rate with 30-day interview guarantee. Real users landed dream jobs with 200+ automated applications.",
@@ -14,6 +20,8 @@ export const metadata = {
   },
 }
 
+=======
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 export default function Results() {
   const stats = [
     {

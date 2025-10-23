@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
@@ -12,6 +13,13 @@ export const metadata = {
   },
 }
 
+=======
+"use client"
+
+import Header from "@/components/header"
+import Footer from "@/components/footer"
+
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 export default function TermsPage() {
   return (
     <main className="min-h-screen bg-background">

@@ -1,9 +1,15 @@
 export default function ProblemSection() {
   const painPoints = [
     {
+<<<<<<< HEAD
       icon: "😓",
       title: "Spray & Pray Burnout",
       description: "40 hours a week, still no callbacks.",
+=======
+      icon: "🌀",
+      title: "Spray & Pray Burnout",
+      description: "40 hours/week, still no callbacks.",
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
     },
     {
       icon: "🤖",
@@ -22,7 +28,11 @@ export default function ProblemSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
+<<<<<<< HEAD
             <span className="text-cyan">Sound Familiar?</span>
+=======
+            Applied to 427 Jobs. Got 3 Interviews. <span className="text-cyan">Sound Familiar?</span>
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
           </h2>
         </div>
 
@@ -30,6 +40,7 @@ export default function ProblemSection() {
           {painPoints.map((point, idx) => (
             <div
               key={idx}
+<<<<<<< HEAD
               className="p-8 bg-midnight rounded-xl border border-border hover:border-cyan transition-smooth animate-slide-in-up hover:scale-105"
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
@@ -37,14 +48,29 @@ export default function ProblemSection() {
                 {point.icon}
               </div>
               <h3 className="text-xl font-bold mb-3">{point.title}</h3>
+=======
+              className="p-6 bg-midnight rounded-xl border border-border hover:border-cyan transition-smooth animate-slide-in-up"
+              style={{ animationDelay: `${idx * 0.1}s` }}
+            >
+              <div className="text-4xl mb-4 animate-float" style={{ animationDelay: `${idx * 0.2}s` }}>
+                {point.icon}
+              </div>
+              <h3 className="text-xl font-bold mb-2">{point.title}</h3>
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
               <p className="text-muted-foreground">{point.description}</p>
             </div>
           ))}
         </div>
 
         <div className="text-center animate-slide-in-up">
+<<<<<<< HEAD
           <p className="text-2xl text-cyan font-semibold">
             Let's fix that.
+=======
+          <p className="text-xl text-muted-foreground">
+            What if Flumberico made your dream job come to you —{" "}
+            <span className="text-cyan font-semibold">while you sleep?</span>
+>>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
           </p>
         </div>
       </div>
