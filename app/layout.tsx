@@ -53,8 +53,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Flumberico - AI Job Hunter | Dream Job in 30 Days",
-    description:
-      "Flumberico uses AI to find and apply to your perfect jobs. Personalized, automated, and guaranteed.",
+    description: "Flumberico uses AI to find and apply to your perfect jobs. Personalized, automated, and guaranteed.",
     creator: "@flumberico",
     images: ["https://flumberico.com/og-image.jpg"],
   },
@@ -97,10 +96,7 @@ export default function RootLayout({
               name: "Flumberico",
               url: "https://flumberico.com",
               logo: "https://flumberico.com/logo.png",
-              sameAs: [
-                "https://twitter.com/flumberico",
-                "https://linkedin.com/company/flumberico",
-              ],
+              sameAs: ["https://twitter.com/flumberico", "https://linkedin.com/company/flumberico"],
               description:
                 "Flumberico helps you land your dream job using AI — applying to 200+ personalized job openings per month.",
             }),
@@ -112,10 +108,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${_geist.className} ${_geistMono.className} font-sans antialiased bg-midnight text-white`}
-<<<<<<< HEAD
         suppressHydrationWarning={true}
-=======
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
       >
         <AnimatedBackground />
         {children}

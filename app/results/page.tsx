@@ -1,27 +1,22 @@
-<<<<<<< HEAD
-=======
-"use client"
-
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { TrendingUp, Users, Award, Zap } from "lucide-react"
 import Link from "next/link"
 
-<<<<<<< HEAD
 export const metadata = {
   title: "Flumberico Results - AI Job Search Success Stories | 83% Success Rate",
-  description: "See real results from Flumberico's AI job search automation. 83% success rate with 30-day interview guarantee. Real users landed dream jobs with 200+ automated applications.",
-  keywords: "Flumberico results, AI job search success, automated job applications results, job search success stories, 30-day interview guarantee results, ATS optimization results, job hunting success, career advancement results",
+  description:
+    "See real results from Flumberico's AI job search automation. 83% success rate with 30-day interview guarantee. Real users landed dream jobs with 200+ automated applications.",
+  keywords:
+    "Flumberico results, AI job search success, automated job applications results, job search success stories, 30-day interview guarantee results, ATS optimization results, job hunting success, career advancement results",
   openGraph: {
     title: "Flumberico Results - AI Job Search Success Stories",
-    description: "Real success stories: 83% of users land interviews with AI job search automation. See how we transform job hunting.",
+    description:
+      "Real success stories: 83% of users land interviews with AI job search automation. See how we transform job hunting.",
     type: "website",
   },
 }
 
-=======
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 export default function Results() {
   const stats = [
     {
@@ -66,8 +61,7 @@ export default function Results() {
       role: "Full Stack Developer",
       company: "Meta",
       image: "👨‍💻",
-      quote:
-        "I never thought I could land a job at Meta. Flumberico made the entire process effortless and efficient.",
+      quote: "I never thought I could land a job at Meta. Flumberico made the entire process effortless and efficient.",
       salary: "$250,000",
       delay: "stagger-2",
     },
@@ -96,8 +90,7 @@ export default function Results() {
       role: "Marketing Manager",
       company: "Amazon",
       image: "👩‍💼",
-      quote:
-        "I’m amazed by Flumberico’s success rate. I landed my dream job in less than a month.",
+      quote: "I'm amazed by Flumberico's success rate. I landed my dream job in less than a month.",
       salary: "$155,000",
       delay: "stagger-5",
     },
@@ -106,8 +99,7 @@ export default function Results() {
       role: "DevOps Engineer",
       company: "Microsoft",
       image: "👨‍💻",
-      quote:
-        "Flumberico didn’t just help me get a job—it helped me increase my salary by 35%. Best investment ever.",
+      quote: "Flumberico didn't just help me get a job—it helped me increase my salary by 35%. Best investment ever.",
       salary: "$195,000",
       delay: "stagger-1",
     },
@@ -124,7 +116,7 @@ export default function Results() {
     {
       title: "Successful Career Pivot",
       description:
-        "Siti wanted to switch from finance to tech. With Flumberico’s help, she secured a Product Manager role at a leading tech company.",
+        "Siti wanted to switch from finance to tech. With Flumberico's help, she secured a Product Manager role at a leading tech company.",
       metrics: ["25 days", "3 offers", "Career change"],
       delay: "stagger-2",
     },

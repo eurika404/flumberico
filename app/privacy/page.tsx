@@ -1,25 +1,20 @@
-<<<<<<< HEAD
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
 export const metadata = {
   title: "Privacy Policy - Flumberico AI Job Search Automation",
-  description: "Flumberico's privacy policy for AI job search automation. Learn how we protect your data with stealth mode privacy, secure job applications, and 30-day interview guarantee.",
-  keywords: "Flumberico privacy policy, AI job search privacy, automated job applications privacy, stealth mode job search, data protection, ATS optimization privacy, job search security, user privacy",
+  description:
+    "Flumberico's privacy policy for AI job search automation. Learn how we protect your data with stealth mode privacy, secure job applications, and 30-day interview guarantee.",
+  keywords:
+    "Flumberico privacy policy, AI job search privacy, automated job applications privacy, stealth mode job search, data protection, ATS optimization privacy, job search security, user privacy",
   openGraph: {
     title: "Privacy Policy - Flumberico AI Job Search Automation",
-    description: "Your privacy matters. Learn how Flumberico protects your job search data with stealth mode and secure AI automation.",
+    description:
+      "Your privacy matters. Learn how Flumberico protects your job search data with stealth mode and secure AI automation.",
     type: "website",
   },
 }
 
-=======
-"use client"
-
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-background">
