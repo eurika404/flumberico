@@ -1,25 +1,8 @@
-<<<<<<< HEAD
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-
-export const metadata = {
-  title: "Terms of Service - Flumberico AI Job Search Automation",
-  description: "Flumberico's terms of service for AI job search automation with 30-day interview guarantee. Terms for applying to 200+ jobs while you sleep with 83% success rate.",
-  keywords: "Flumberico terms of service, AI job search terms, automated job applications terms, 30-day interview guarantee terms, ATS optimization terms, job search automation terms, service agreement",
-  openGraph: {
-    title: "Terms of Service - Flumberico AI Job Search Automation",
-    description: "Terms and conditions for AI job search automation service with 30-day interview guarantee and 200+ monthly applications.",
-    type: "website",
-  },
-}
-
-=======
 "use client"
 
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 export default function TermsPage() {
   return (
     <main className="min-h-screen bg-background">

@@ -1,40 +1,17 @@
-<<<<<<< HEAD
-=======
 "use client"
 
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { ArrowRight, Zap, Target, CheckCircle, Rocket } from "lucide-react"
 import Link from "next/link"
 
-<<<<<<< HEAD
-export const metadata = {
-  title: "How Flumberico Works - AI Job Search Automation | 4-Step Process",
-  description: "Discover how Flumberico's AI applies to 200+ jobs while you sleep. Our 4-step automated job search process includes ATS optimization, custom resumes, and 30-day interview guarantee.",
-  keywords: "how Flumberico works, AI job search process, automated job applications, ATS optimization, resume automation, job search steps, AI job matching, automated applications, job hunting automation, career advancement",
-  openGraph: {
-    title: "How Flumberico Works - AI Job Search Automation",
-    description: "4-step process: AI applies to 200+ jobs with custom resumes while you sleep. 83% success rate.",
-    type: "website",
-  },
-}
-
-=======
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
 export default function HowItWorks() {
   const steps = [
     {
       number: "01",
-<<<<<<< HEAD
-      title: "Add Your Experience",
-      description:
-        "Tell Flumberico about your skills, experience, and dream job preferences. Optionally add your LinkedIn profile for enhanced AI matching. Takes 2 minutes.",
-=======
       title: "Profile Setup",
       description:
         "Create a complete profile with your resume, experience, and job preferences. Our AI analyzes your data to understand your skills and career goals.",
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
       icon: Target,
       delay: "stagger-1",
     },
@@ -42,38 +19,20 @@ export default function HowItWorks() {
       number: "02",
       title: "AI Job Matching",
       description:
-<<<<<<< HEAD
-        "Our AI scans 200+ job opportunities monthly, matching your profile with 94% ATS accuracy. We find positions that align with your skills and salary goals.",
-=======
         "Our algorithm scans over 200+ job opportunities each month from thousands of leading companies worldwide to find your best matches.",
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
       icon: Zap,
       delay: "stagger-2",
     },
     {
       number: "03",
-<<<<<<< HEAD
-      title: "Custom Resume Creation",
-      description:
-        "For each matched job, Flumberico crafts a personalized resume optimized for ATS systems and job descriptions. No more generic applications.",
-=======
       title: "Optimized Applications",
       description:
         "For each matched job, our AI crafts a personalized resume and cover letter to increase your chances of getting shortlisted.",
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
       icon: CheckCircle,
       delay: "stagger-3",
     },
     {
       number: "04",
-<<<<<<< HEAD
-      title: "Automated Applications",
-      description:
-        "AI submits 200+ applications automatically while you sleep. Stealth mode keeps your job search private from current employers. Track everything in real-time.",
-      icon: Rocket,
-      delay: "stagger-4",
-    },
-=======
       title: "Automatic Submissions",
       description:
         "Your applications are submitted automatically at the most strategic times — maximizing visibility with recruiters.",
@@ -87,7 +46,6 @@ export default function HowItWorks() {
       icon: Target,
       delay: "stagger-5",
     },
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
   ]
 
   return (
@@ -102,18 +60,8 @@ export default function HowItWorks() {
               How <span className="text-cyan">Flumberico</span> Works
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-<<<<<<< HEAD
-              4-step AI job search automation that applies to 200+ jobs while you sleep. 83% success rate with 30-day interview guarantee.
-            </p>
-            <div className="flex justify-center gap-8 text-sm text-muted-foreground">
-              <div>⚡ 200+ Applications Monthly</div>
-              <div>🎯 94% ATS Accuracy</div>
-              <div>💰 $500 Guarantee</div>
-            </div>
-=======
               A simple 5-step process to land your dream job in under 30 days.
             </p>
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
           </div>
         </div>
       </section>
@@ -159,50 +107,12 @@ export default function HowItWorks() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-midnight-light/50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16">
-<<<<<<< HEAD
-            Flumberico <span className="text-cyan">Advantages</span>
-=======
             Key <span className="text-cyan">Features</span>
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-<<<<<<< HEAD
-                title: "ATS Optimization",
-                description:
-                  "94% match accuracy beats applicant tracking systems. Your custom resumes get seen by recruiters, not filtered out.",
-                icon: "🎯",
-              },
-              {
-                title: "200+ Monthly Applications",
-                description:
-                  "AI submits applications while you sleep. Save 40 hours weekly and increase your interview chances dramatically.",
-                icon: "⚡",
-              },
-              {
-                title: "Stealth Mode",
-                description:
-                  "Privacy-first job hunting. Your current employer won't know you're exploring opportunities. Complete discretion guaranteed.",
-                icon: "🛡️",
-              },
-              {
-                title: "30-Day Interview Guarantee",
-                description: "Land interviews in 30 days or we pay you $500. No-risk job search with proven 83% success rate.",
-                icon: "💰",
-              },
-              {
-                title: "Custom Resume AI",
-                description: "Every application gets a tailored resume. No more generic 'one-size-fits-all' submissions that get rejected.",
-                icon: "📄",
-              },
-              {
-                title: "Real-time Analytics",
-                description: "Track applications, view responses, and optimize your job search strategy with live data insights.",
-                icon: "📊",
-              },
-=======
                 title: "AI-Powered Matching",
                 description:
                   "Our machine learning technology understands your preferences and finds the perfect job for you.",
@@ -235,7 +145,6 @@ export default function HowItWorks() {
                 description: "If you don't land a job within 30 days, we'll refund you $500 — no questions asked.",
                 icon: "✅",
               },
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
             ].map((feature, index) => (
               <div
                 key={index}
@@ -255,26 +164,6 @@ export default function HowItWorks() {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-<<<<<<< HEAD
-          <h2 className="text-4xl font-bold mb-6">Stop Applying, Start Interviewing</h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Join 3,800+ professionals who've transformed their job search from 40 hours weekly to automated AI success. Limited to 10,000 spots - 78% filled.
-          </p>
-          <div className="flex justify-center gap-4 mb-8">
-            <div className="text-sm text-muted-foreground">
-              ✓ No Credit Card Required
-            </div>
-            <div className="text-sm text-muted-foreground">
-              ✓ 30-Day Interview Guarantee
-            </div>
-            <div className="text-sm text-muted-foreground">
-              ✓ Skip Line with 3 Referrals
-            </div>
-          </div>
-          <Link href="/onboarding">
-            <button className="px-8 py-4 bg-cyan text-midnight font-bold rounded-full hover:bg-cyan-dark transition-smooth glow-cyan hover:glow-cyan-lg animate-glow-pulse text-lg">
-              Join Waitlist & Skip Line
-=======
           <h2 className="text-4xl font-bold mb-6">Ready to Start Your Journey?</h2>
           <p className="text-xl text-muted-foreground mb-8">
             Join thousands of professionals who have already landed their dream jobs with Flumberico.
@@ -282,7 +171,6 @@ export default function HowItWorks() {
           <Link href="/onboarding">
             <button className="px-8 py-4 bg-cyan text-midnight font-bold rounded-full hover:bg-cyan-dark transition-smooth glow-cyan hover:glow-cyan-lg animate-glow-pulse text-lg">
               Get Started
->>>>>>> 87c15452b50e1e50ab1b328fee0291f5f69d2d83
             </button>
           </Link>
         </div>
