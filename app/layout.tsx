@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import AnimatedBackground from "@/components/animated-background"
+import { ClerkProviderWrapper } from "@/lib/clerk"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"], display: "swap" })
@@ -110,9 +111,11 @@ export default function RootLayout({
         className={`${_geist.className} ${_geistMono.className} font-sans antialiased bg-midnight text-white`}
         suppressHydrationWarning={true}
       >
-        <AnimatedBackground />
-        {children}
-        <Analytics />
+        <ClerkProviderWrapper>
+          <AnimatedBackground />
+          {children}
+          <Analytics />
+        </ClerkProviderWrapper>
       </body>
     </html>
   )
